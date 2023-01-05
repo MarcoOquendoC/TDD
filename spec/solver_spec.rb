@@ -1,9 +1,8 @@
-require_relative '.././solver.rb'
+require_relative '.././solver'
 
 describe Solver do
   solver = Solver
-  context 'behavior.' do
-
+  context 'factorial behavior.' do
     it 'should return 1 to factorial of 0.' do
       expect(solver.factorial(0)).to eql(1)
     end
@@ -27,7 +26,9 @@ describe Solver do
     it 'should return a factorial number of 5.' do
       expect(solver.factorial(5)).to eql(120)
     end
+  end
 
+  context 'fizzbuzz behavior.' do
     it 'should return fizz when divisble by 3' do
       expect(solver.fizzbuzz(6)).to eql('fizz')
     end
@@ -40,5 +41,4 @@ describe Solver do
       expect(solver.fizzbuzz(15)).to eql('fizzbuzz')
     end
   end
-
 end
