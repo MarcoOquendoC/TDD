@@ -17,6 +17,7 @@ class Solver
 
   def self.reverse(str)
     return -1 if str.instance_of(Numeric)
+
     str.reverse
   end
 end
