@@ -41,4 +41,10 @@ describe Solver do
       expect(solver.fizzbuzz(15)).to eql('fizzbuzz')
     end
   end
+
+  context 'reverse behavior.' do
+    it 'should return olleh when given hello' do
+      expect(solver.reverse('hello')).to eql('olleh')
+    end
+  end
 end
